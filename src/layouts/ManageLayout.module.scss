@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    height: 100vh;
+    min-width: 730px;
+}
+
+.left {
+    width: 120px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    flex: 1;
+    background-color: #f7f8fa;
+}
+
+.selected_tab {
+    background-color: #f5f6fa;
+    ;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    /* 调整阴影参数 */
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 适当调整阴影参数 */
+}

@@ -1,0 +1,68 @@
+.container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            flex-basis: calc(20% - 20px);
+            background-color: white;
+            border: 1px solid #eff1f4;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            height: 200px;
+
+            &:hover {
+                border: 1px solid #2672ff;
+                box-shadow: 0 0 10px 0 rgba(78, 89, 105, .1);
+            }
+
+            .card_body {
+                flex: 1;
+            }
+
+            .card_footer {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+}
+
+// 预览框样式
+.modal {
+    height: 500px;
+    overflow-y: scroll;
+
+    .component-wrapper {
+        position: relative;
+        margin: 12px;
+        border: 1px dotted #fff;
+        padding: 12px;
+        border-radius: 3px;
+
+        .component {
+            pointer-events: none; // 屏蔽鼠标行为，组件不让被点击到
+        }
+    }
+}

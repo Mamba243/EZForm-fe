@@ -1,0 +1,36 @@
+.container {
+    min-height: 100vh;
+    padding: 44px 0;
+    background-color: #f7f8fa;
+    display: flex;
+
+    .left {}
+
+    .canvas {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 60px 40px 0 40px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px #0000001f;
+        flex: 1;
+
+        .qrcode {
+            position: fixed;
+            transform: translateX(760px);
+            top: 50px;
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .right {
+        background-color: blue;
+    }
+}
+
+.block {
+    pointer-events: none; // 屏蔽鼠标行为，组件不让被点击到
+}

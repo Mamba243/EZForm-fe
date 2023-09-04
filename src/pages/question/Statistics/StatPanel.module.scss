@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.segmentd {
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.tabPanel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+
+    .listPanel {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        background-color: white;
+        overflow-x: auto;
+    }
+
+    .chartPanel {
+        flex: 1;
+        background-color: white;
+        padding-bottom: 50px;
+    }
+}

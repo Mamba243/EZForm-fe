@@ -1,0 +1,20 @@
+.container {
+    .right {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        height: 100vh;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        .header {
+            height: 50px;
+            padding-left: 5px;
+        }
+
+        .main {
+            padding-left: 5px;
+            height: 100%;
+        }
+    }
+}

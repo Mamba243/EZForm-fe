@@ -1,0 +1,3 @@
+- 如果是获取store里面的数据 命名 useGetXXXX
+- 如果是通过网络请求获取后端的数据 命名 useLoadXXXX
+- 如果是其他hook 命名 useXXXX

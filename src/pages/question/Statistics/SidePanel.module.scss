@@ -1,0 +1,38 @@
+.sider {
+    height: 100vh;
+    overflow: scroll;
+    // border-right: 1px solid red;
+}
+
+.component-wrapper {
+    position: relative;
+    margin: 12px;
+    border: 1px dotted #fff;
+    padding: 12px;
+    border-radius: 3px;
+
+    &:hover {
+        border-color: #d9d9d9;
+    }
+
+    .component {
+        .content {
+            pointer-events: none; // 屏蔽鼠标行为，组件不让被点击到
+        }
+
+        .bar {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.selected {
+    border-color: #3471FF !important;
+}
+
+:global(:where(.css-dev-only-do-not-override-1m62vyb).ant-layout .ant-layout-sider-light .ant-layout-sider-zero-width-trigger) {
+    background: none;
+    border: none;
+}
